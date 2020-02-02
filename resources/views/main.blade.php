@@ -44,7 +44,7 @@
     <br>
     @if(!empty($res_pars777555))
         @foreach($res_pars777555 as $key => $value)
-            {{ $value }} <br>
+            {{$key}} = {{ $value }} <br>
         @endforeach
 
     @endif

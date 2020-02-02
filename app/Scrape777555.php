@@ -19,10 +19,17 @@ class Scrape777555 extends Model
 
         //     $client->setClient($guzzleClient);
         $crawler = $client->request('SET', 'https://www.777555.by/kompyutery_i_seti/noutbuki_i_aksessuary/noutbuki/');
-        $nodeValues = $crawler->filter('.catalog-item-title a')->each(function ($node) {
+        $nodeValuesTitle = $crawler->filter('.catalog-item-title a')->each(function ($node) {
+            //'.catalog-item-title a',
          //   $this->res_pars777555[] = $node->text() . "\n";
             return $node->text() . "\n";
         });
+        $nodeValuesPrice = $crawler->filter('.catalog-item-pricemini')->each(function ($node) {
+            //'.catalog-item-title a',
+            //   $this->res_pars777555[] = $node->text() . "\n";
+            return $node->text() . "\n";
+        });
+        $nodeValues = array_combine($nodeValuesTitle, $nodeValuesPrice);
         return $nodeValues;
     }
 
