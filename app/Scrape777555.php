@@ -34,6 +34,7 @@ class Scrape777555 extends Model
     }
 
 
+
     public function getRes()
     {
         $this->getTelevision();
