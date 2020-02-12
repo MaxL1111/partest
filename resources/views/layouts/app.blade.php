@@ -101,21 +101,7 @@
                     <a href="http://portal.gov.by/" class="list-group-item list-group-item-action">
                         <img src="{{ URL::to('/images/rightnav/2portal.jpg') }}" class="card-img-top" alt="...">
                     </a>
-                    <a href="http://www.gorod.gomel.by/" class="list-group-item list-group-item-action">
-                        <img src="{{ URL::to('/images/rightnav/3gomispolkom.jpg') }}" class="card-img-top" alt="...">
-                    </a>
-                    <a href="http://gomeloblzem.by/" class="list-group-item list-group-item-action">
-                        <img src="{{ URL::to('/images/rightnav/4zemleustrsluzhba.jpg') }}" class="card-img-top" alt="...">
-                    </a>
-                    <a href="http://ugkh.gomel.by/" class="list-group-item list-group-item-action">
-                        <img src="{{ URL::to('/images/rightnav/5gogkh.png') }}" class="card-img-top" alt="...">
-                    </a>
-                    <a href="http://www.pravo.by/" class="list-group-item list-group-item-action">
-                        <img src="{{ URL::to('/images/rightnav/6pravoby.png') }}" class="card-img-top" alt="...">
-                    </a>
-                    <a href="http://www.president.gov.by/" class="list-group-item list-group-item-action">
-                        <img src="{{ URL::to('/images/rightnav/7portpres.jpg') }}" class="card-img-top" alt="...">
-                    </a>
+
                 </div>
             </div>
 
