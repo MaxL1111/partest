@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Scrape777555;
-use Illuminate\Http\Request;
-use Maatwebsite\Excel\Excel;
+use App\Models\Collections\ZeonNbExport;
+use App\Models\ZeonNb;
+use Maatwebsite\Excel\Facades\Excel;
 
 
 
@@ -16,13 +16,20 @@ class MainController extends Controller
 
     public function pars777555(){
 
-      //  $foo = 0;
-        $res_pars777555 = new Scrape777555();
-
-     //  $q = new Excel();
-     //   $arr=array(4,5,7);
-     //   Excel::download($arr, 'users.xlsx');
-  //    $q->download($arr, 'users.xlsx',null, $headers = []);
-        return view('main', ['res_pars777555' => $res_pars777555->getTelevision()]);
+        $res_pars777555 = new ZeonNb();
+        return view('main', ['res_pars777555' => $res_pars777555->getNb()]);
     }
+
+    public function export()
+    {
+        return Excel::download(new ZeonNbExport(), 'zeon_nb.xlsx');
+    }
+
+    public function storeExcel()
+    {
+         Excel::store(new ZeonNbExport(), 'invoices1.xlsx', 'public');
+        return view('main');
+    }
+
+
 }

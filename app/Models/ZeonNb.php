@@ -1,16 +1,17 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Goutte\Client;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
-class Scrape777555 extends Model
+class ZeonNb extends Model
 {
 
+    protected $table = 'zeonnb';
 
-    public function getTelevision()
+    public function getNb()
     {
 
         $client = new Client();

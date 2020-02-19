@@ -14,3 +14,6 @@
 Route::get('/', 'MainController@index');
 
 Route::get('/777555', 'MainController@pars777555');
+
+Route::get('/zeonnb/export/', 'MainController@export');
+Route::get('/zeonnb/store/', 'MainController@storeExcel');

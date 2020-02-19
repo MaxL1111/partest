@@ -41,7 +41,8 @@
             Спасибо.
         </strong></p>
 
-
+    <a class="btn btn-primary" href="{{'/zeonnb/store/'}}" role="button">Загрузить на диск</a>
+    <a class="btn btn-primary" href="{{'/zeonnb/export/'}}" role="button">Скачать архив</a>
     <a class="btn btn-primary" href="{{'/777555'}}" role="button">777555</a>
     <br>
     @if(!empty($res_pars777555))
