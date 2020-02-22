@@ -5,9 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
     <link href="css/app.css" rel="stylesheet">
 
     <!-- Подключаем иконки -->
@@ -32,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <p class="nav-link" href="#"><strong>Власть:</strong><span class="sr-only">(current)</span></p>
+                        <p class="nav-link" href="#"><strong>Парсинг</strong><span class="sr-only">(current)</span></p>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
@@ -41,10 +38,7 @@
                         <a class="nav-link" href="#">Структура</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Телефоны горячей линии</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{'/question'}}">Задать вопрос</a>
+                        <a class="nav-link" href="{{'/question'}}">Обратная связь</a>
                     </li>
                 </ul>
             </div>
@@ -53,11 +47,6 @@
 
         <div class="qwe">
 
-            <h2>
-                <strong>
-                    Мы оказываем веб-улуги по парсингу сайтов!
-                </strong>
-            </h2>
         </div>
 
     @show
@@ -78,7 +67,8 @@
                                 <a class="nav-link" href="{{'/shop_dress_belarus'}}">База магазинов одежды Беларуси</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{'/shop_build_belarus'}}">База строительных компаний Беларуси</a>
+                                <a class="nav-link" href="{{'/shop_build_belarus'}}">База строительных компаний
+                                    Беларуси</a>
                             </li>
                         </ul>
 
@@ -86,7 +76,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-7 col-md-7">
+            <div class="col-lg-8 col-md-7">
 
                 <div class="card-body">
                     @yield('content')
@@ -94,17 +84,13 @@
 
             </div>
 
-            <div id="right_navbar" class="col-lg-3 col-md-5">
+            <div id="right_navbar" class="col-lg-2 col-md-5">
 
 
                 <div class="list-group" role="tablist">
                     <a href="http://www.mjkx.gov.by/" class="list-group-item list-group-item-action">
                         <img src="{{ URL::to('/images/rightnav/1mingkh.png') }}" class="card-img-top" alt="...">
                     </a>
-                    <a href="http://portal.gov.by/" class="list-group-item list-group-item-action">
-                        <img src="{{ URL::to('/images/rightnav/2portal.jpg') }}" class="card-img-top" alt="...">
-                    </a>
-
                 </div>
             </div>
 
@@ -120,7 +106,6 @@
                 <span id="footer_text_small"
                       class="small">246000, Республика Беларусь</span>
             </p>
-
 
 
             <hr id="line">

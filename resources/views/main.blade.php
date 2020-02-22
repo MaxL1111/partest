@@ -4,46 +4,16 @@
 
 @section('content')
 
-    <div class="card mb-3" style="max-width: 590px;">
-        <div class="row no-gutters">
-            <div class="col-4 col-sm-3 col-md-6 col-lg-4 col-xl-3">
-                <img src="{{ URL::to('/images/director.jpg') }}" class="img-fluid" alt="...">
-            </div>
-            <div class="col-8 col-sm-9 col-md-6 col-lg-8 col-xl-9">
-                <div class="card-body">
-                    <h5 id="name_director" class="card-title"><span class="name_director">Кулаго Виктор Андреевич</span></h5>
-                    <h5 id="discr_director"><small class="text-muted">Генеральный директор КПУП "Гомельское городское ЖКХ"</small></h5>
-                </div>
-            </div>
-        </div>
+    <div class="alert alert-success" role="alert">
+        <h5 class="alert-heading">Приветствуем тебя наш посетитель!</h5>
+        <hr>
+        <p>Мы оказываем услуги по парсингу сайтов.<br/>
+            Даннные будут представлены в удобном для мониторинга формате excel-таблиц.</p>
     </div>
 
-    <p class="text-justify"><strong>Уважаемые гомельчане и гости нашего города! Позвольте мне от имени КПУП "Гомельское
-            городское ЖКХ" приветствовать Вас в качестве посетителей официального сайта Гомельского городского ЖКХ.
-            <br/>
-            Коммунальное производственное унитарное предприятие "Гомельское городское
-            ЖКХ" - многоотраслевая
-            организация,
-            функциональное назначение которой состоит в создании надлежащих условий для жизнедеятельности
-            населения,
-            предоставляя весь комплекс жилищно-коммунальных услуг.
-            <br/>
+    <a class="btn btn-success" href="{{'/zeonnb/store/'}}" role="button">Экспортировать на сервер</a>
 
-            <a href="https://rocld.com/ga02v">Скачать с гугл диск</a>
-            Ознакомиться с деятельностью предприятий жилищно-коммунального хозяйства города, узнать
-            историю нашего предприятия, получить информацию о состоянии культурной и спортивной жизни КПУП
-            "Гомельское городское ЖКХ" вы сможете на нашем сайте.
-            <br/>
-            Надеюсь, что посещение сайта откроет для Вас много нового и интересного о
-            жилищно-коммунальном хозяйстве
-            города Гомеля.
-            <br/>
-            Спасибо.
-        </strong></p>
-
-    <a class="btn btn-primary" href="{{'/zeonnb/store/'}}" role="button">Загрузить на диск</a>
-    <a class="btn btn-primary" href="{{'/zeonnb/export/'}}" role="button">Скачать архив</a>
-    <a class="btn btn-primary" href="{{'/777555'}}" role="button">777555</a>
+    <a class="btn btn-info" href="{{'/777555'}}" role="button">Парсить зеон</a>
     <br>
     @if(!empty($res_pars777555))
         @foreach($res_pars777555 as $key => $value)
@@ -52,28 +22,32 @@
 
     @endif
 
-    <h2>Внимание</h2>
-
     <hr id="line_main">
 
+    <h2>Примеры результата парсинга ниже по ссылкам</h2>
+
+
+
     <div class="row">
-        <div class="col-lg-6 col-md-12">
+        <div class="col-lg-6 col-md-6 col-sm-6">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Уважаемые жители!</h5>
-                    <p class="card-text">С 4 по 30 октября 2019 года проводится перепись населения!</p>
-                    <a href="{{'/download/perepis_nasel.pdf'}}" class="btn btn-primary">Скачать брошюру</a>
+                    <h5 class="card-title">Парсинг сайта www.777555.by</h5>
+                    <p class="card-text">Ниже по ссылке вы можете скачать пробный отчет в формате
+                        excel-файла!</p>
+                    <a href="{{'/download/invoices1.xlsx'}}" class="btn btn-primary">Скачать файл</a>
                 </div>
             </div>
         </div>
-        <span class="invisible_symbol">&nbsp</span>
 
-        <div class="col-lg-6 col-md-12">
+
+        <div class="col-lg-6 col-md-6 col-sm-6">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Как не стать жертвой кибермошенников!</h5>
-                    <p class="card-text">Надежные пароли, безопасный WI-FI...</p>
-                    <a href="{{'/download/info_security.pdf'}}" class="btn btn-primary">Скачать брошюру</a>
+                    <h5 class="card-title">Парсинг сайта www.5element.by</h5>
+                    <p class="card-text">Ниже по ссылке вы можете скачать пробный отчет в формате
+                        excel-файла!</p>
+                    <a href="{{'/download/invoices1.xlsx'}}" class="btn btn-primary">Скачать файл</a>
                 </div>
             </div>
         </div>
@@ -82,25 +56,28 @@
     <br>
 
     <div class="row">
-        <div class="col-lg-6 col-md-12">
+        <div class="col-lg-6 col-md-12 col-sm-6">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Подоходный налог с физлиц при сдаче внаем помещений</h5>
-                    <p class="card-text">Порядок налогообложения доходов, полученных физическими лицами...</p>
-                    <a href="{{'/download/podoh_nalog.pdf'}}" class="btn btn-primary">Скачать брошюру</a>
+                    <h5 class="card-title">Парсинг сайта www.xxxxx.by</h5>
+                    <p class="card-text">Ниже по ссылке вы можете скачать пробный отчет в формате
+                        excel-файла!</p>
+                    <a href="{{'/download/invoices1.xlsx'}}" class="btn btn-primary">Скачать файл</a>
                 </div>
             </div>
         </div>
-        <span class="invisible_symbol">&nbsp</span>
-        <div class="col-lg-6 col-md-12">
+
+        <div class="col-lg-6 col-md-12 col-sm-6">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Информация о действующих службах</h5>
-                    <p class="card-text">Службы, оказывающие медицинскую, социальную и психологическую помощь...</p>
-                    <a href="{{'/download/helper_service.pdf'}}" class="btn btn-primary">Скачать брошюру</a>
+                    <h5 class="card-title">Парсинг сайта www.qqqq.by</h5>
+                    <p class="card-text">Ниже по ссылке вы можете скачать пробный отчет в формате
+                        excel-файла!</p>
+                    <a href="{{'/download/invoices1.xlsx'}}" class="btn btn-primary">Скачать файл</a>
                 </div>
             </div>
         </div>
+
     </div>
     <br>
     <div class="alert alert-danger" role="alert">
