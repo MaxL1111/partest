@@ -16,7 +16,7 @@ class ZeonNb extends Model
 
         $client = new Client();
 
-        for ($number = 1; $number <= 5; $number++) {
+        for ($number = 1; $number <= 2; $number++) {
             // отправляем запрос на сервер,и в качестве результата нам вернулся объект
             $crawler = $client->request('SET', 'https://www.777555.by/kompyutery_i_seti/noutbuki_i_aksessuary/noutbuki/page' . $number . '/');
 

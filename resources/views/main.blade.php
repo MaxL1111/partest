@@ -35,7 +35,7 @@
                     <h5 class="card-title">Парсинг сайта www.777555.by</h5>
                     <p class="card-text">Ниже по ссылке вы можете скачать пробный отчет в формате
                         excel-файла!</p>
-                    <a href="{{'/download/invoices1.xlsx'}}" class="btn btn-primary">Скачать файл</a>
+                    <a href="{{'/download/zeon_notebook.xlsx'}}" class="btn btn-primary">Скачать файл</a>
                 </div>
             </div>
         </div>

@@ -17,7 +17,8 @@ class MainController extends Controller
     public function pars777555(){
 
         $res_pars777555 = new ZeonNb();
-        return view('main', ['res_pars777555' => $res_pars777555->getNb()]);
+        $res_pars777555->getNb();
+       // return view('main', ['res_pars777555' => $res_pars777555->getNb()]);
     }
 
     /*
@@ -28,11 +29,11 @@ class MainController extends Controller
 
     */
 
-    //экспорт данных из таблицы БД в exel и загружает на диск сервера
+    //экспорт данных из таблицы БД в exel-таблицу и загружает эту таблицу на сервер
     public function storeExcel()
     {
          Excel::store(new ZeonNbExport(), 'zeon_notebook.xlsx', 'public');
-        return view('main');
+       // return view('main');
     }
 
 
