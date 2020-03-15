@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AutoruKiaOpt;
 use App\Models\Collections\ZeonNbExport;
 use App\Models\ZeonNb;
 use Maatwebsite\Excel\Facades\Excel;
@@ -16,9 +17,16 @@ class MainController extends Controller
 
     public function pars777555(){
 
-        $res_pars777555 = new ZeonNb();
-        $res_pars777555->getNb();
+        $res_pars = new ZeonNb();
+        $res_pars->getData();
        // return view('main', ['res_pars777555' => $res_pars777555->getNb()]);
+    }
+
+    public function parsAutoru(){
+
+        $res_pars = new AutoruKiaOpt();
+        $res_pars->getData();
+        // return view('main', ['res_pars777555' => $res_pars777555->getNb()]);
     }
 
     /*
@@ -32,8 +40,9 @@ class MainController extends Controller
     //экспорт данных из таблицы БД в exel-таблицу и загружает эту таблицу на сервер
     public function storeExcel()
     {
-         Excel::store(new ZeonNbExport(), 'zeon_notebook.xlsx', 'public');
-       // return view('main');
+        Excel::store(new ZeonNbExport(), 'zeon_notebook.xlsx', 'public') ;
+        // $this->index();
+        return view('main');
     }
 
 

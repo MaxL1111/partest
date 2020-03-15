@@ -11,7 +11,7 @@ class ZeonNb extends Model
 
     protected $table = 'zeonnb';
 
-    public function getNb()
+    public function getData()
     {
 
         $client = new Client();

@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <p class="nav-link" href="#"><strong>Парсинг</strong><span class="sr-only">(current)</span></p>
+                        <p class="nav-link" href="#"><strong>Парсинг-локальный</strong><span class="sr-only">(current)</span></p>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>

@@ -15,6 +15,8 @@ Route::get('/', 'MainController@index');
 
 Route::get('/777555', 'MainController@pars777555');
 
+Route::get('/autoru', 'MainController@parsAutoru');
+
 //экспорт данных из таблицы БД в exel и отдает пользователю
 //Route::get('/zeonnb/export/', 'MainController@export');
 
